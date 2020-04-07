@@ -4,7 +4,7 @@ const port = process.env.PORT;
 const app = express(); // Create an express app
 
 const buildPath = path.join(__dirname, '..', 'build');
-const buildFile = path.join(__dirname, '..', 'build', 'index.html');
+const buildFile = path.join(__dirname, 'build', 'index.html');
 
 app.use(express.static(buildPath)); // Tell Express to use the build directory to serve up all our static assets
 
