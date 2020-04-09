@@ -3,6 +3,9 @@ const path = require('path');
 const port = process.env.PORT;
 const app = express(); // Create an express app
 
+//     "start": "node server/server.js"  -> Personal note: Add this to package.json to start with prod server
+
+
 const buildPath = path.join(__dirname, '..', 'build');
 const buildFile = path.join(__dirname, '..', 'build', 'index.html');
 

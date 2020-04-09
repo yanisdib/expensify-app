@@ -59,6 +59,7 @@ export class ExpenseListFilters extends React.Component {
                     onFocusChange={this.onFocusChange}
                     showClearDates={true}
                     numberOfMonths={1}
+                    displayFormat={() => "DD/MM/YYYY"}
                     isOutsideRange={() => false}
                 />
             </div>
@@ -76,4 +77,5 @@ const mapDispatchToProps = (dispatch) => ({
     setStartDate: (startDate) => dispatch(setStartDate(startDate)),
     setEndDate: (endDate) => dispatch(setEndDate(endDate))
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(ExpenseListFilters);

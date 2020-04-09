@@ -4,5 +4,6 @@ exports[`should generate Dashboard correctly 1`] = `
 <div>
   <React.Memo />
   <React.Memo />
+  <React.Memo />
 </div>
 `;
