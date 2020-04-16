@@ -1,16 +1,5 @@
 import * as firebase from 'firebase';
 
-// const config = {
-//     apiKey: "AIzaSyCcNN13-MuHE6f8MXKI_GNWk6t_E1frUmg",
-//     authDomain: "yns-expensify.firebaseapp.com",
-//     databaseURL: "https://yns-expensify.firebaseio.com",
-//     projectId: "yns-expensify",
-//     storageBucket: "yns-expensify.appspot.com",
-//     messagingSenderId: "690008666736",
-//     appId: "1:690008666736:web:308966c7ac7362b3453ab5",
-//     measurementId: "G-8WJEJBKK9Y"
-// };
-
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -21,6 +10,7 @@ const config = {
     appId: process.env.FIREBASE_APP_ID,
     measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
+
 console.log(`Database url is: ${process.env.FIREBASE_API_KEY}`)
 
 firebase.initializeApp(config);
