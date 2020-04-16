@@ -21,14 +21,12 @@ const config = {
     appId: process.env.FIREBASE_APP_ID,
     measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
+console.log(`Database url is: ${process.env.FIREBASE_API_KEY}`)
 
 firebase.initializeApp(config);
 
 const database = firebase.database();
-
-
 export { firebase, database as default };
-
 
 // // child_removed
 // database.ref('expenses').on('child_removed', (snapshot) => {
