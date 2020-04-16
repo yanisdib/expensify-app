@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'test') {
     require('dotenv').config({ path: '.env.test' });
 } else if (process.env.NODE_ENV === 'development') {
     require('dotenv').config({ path: '.env.development' });
-};
+}
 
 module.exports = {
     entry: './src/App.js',
@@ -15,7 +15,6 @@ module.exports = {
         path: path.join(__dirname, 'public', 'dist'),
         filename: 'bundle.js'
     },
-    // 3
     plugins: [
         new webpack.DefinePlugin({
             'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),

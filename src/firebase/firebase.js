@@ -11,7 +11,7 @@ const config = {
     measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
-console.log(`Database url is: ${process.env.FIREBASE_API_KEY}`)
+console.log(`Database url is: ${process.env.FIREBASE_API_KEY} & ENV is: ${process.env.NODE_ENV}`)
 
 firebase.initializeApp(config);
 
