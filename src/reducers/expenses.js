@@ -5,7 +5,7 @@ export default (state = expensesReducerDefaultState, action) => {
         case 'ADD_EXPENSE':
             return [
                 ...state,
-                action.expenses
+                action.expense
             ];
         case 'EDIT_EXPENSE':
             return state.map((expense) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from '../components/Header/Header';
-import Expensify from '../Expensify';
+import App from '../App';
 import Dashboard from '../components/Pages/Dashboard/Dashboard';
 import AddExpense from '../components/Pages/Dashboard/AddExpense/AddExpense';
 import EditExpense from '../components/Pages/Dashboard/EditExpense/EditExpense';
@@ -12,10 +12,10 @@ import NotFound from '../components/Pages/Error/NotFound';
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div>
+        <div className="container">
             <Header />
             <Switch>
-                <Route path="/" component={Expensify} exact={true} />
+                <Route path="/" component={App} exact={true} />
                 <Route path="/dashboard" component={Dashboard} />
                 <Route path="/create" component={AddExpense} />
                 <Route path="/edit" component={EditExpense} exact={true} />

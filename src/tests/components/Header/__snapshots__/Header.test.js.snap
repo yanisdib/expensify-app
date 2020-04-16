@@ -1,31 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<header>
+<header
+  className="navbar"
+>
   <h1>
     Expensify
   </h1>
   <[object Object]
-    activeClassName="is-active"
+    activeClassName="nav-link is-active"
     exact={true}
     to="/"
   >
     Home
   </[object Object]>
   <[object Object]
-    activeClassName="is-active"
+    activeClassName="nav-link is-active"
     to="/dashboard"
   >
     Dashboard
   </[object Object]>
   <[object Object]
-    activeClassName="is-active"
+    activeClassName="nav-link is-active"
     to="/create"
   >
     Create expense
   </[object Object]>
   <[object Object]
-    activeClassName="is-active"
+    activeClassName="nav-link is-active"
     to="/help"
   >
     Help
