@@ -5,9 +5,9 @@ exports[`should render ExpenseListItems correctly 1`] = `
   <[object Object]
     to="/edit/1"
   >
-    <h3>
+    <h5>
       Gum
-    </h3>
+    </h5>
   </[object Object]>
   <p>
     $195.00
