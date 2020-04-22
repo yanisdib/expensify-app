@@ -198,7 +198,6 @@ export { firebase, database as default };
 //     'location/city': 'Seattle'
 // }).then(() => {
 //     console.log('Data successfully updated!');
-// }).catch((e) => {
 //     console.log('Data update has failed. Error: ', e);
 // });
 

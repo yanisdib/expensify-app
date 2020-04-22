@@ -1,12 +1,13 @@
 import React from 'react';
 import numeral from 'numeral';
+import '../../../numeral/formats/euro';
 import { connect } from 'react-redux';
 import selectExpenses from '../../../selectors/expenses';
 import getExpensesTotal from '../../../selectors/expenses-total';
 
 export const ExpenseSummary = ({ expensesCount, expensesTotal }) => {
     const expenseWord = expensesCount <= 1 ? 'expense' : 'expenses';
-    const formattedExpensesTotal = numeral(expensesTotal).format('$00.00');
+    const formattedExpensesTotal = numeral(expensesTotal).format('0,0.00€').replace(',',' ');
     return (
         <div>
             <h3>View {expensesCount} {expenseWord} totalling {formattedExpensesTotal}</h3>
