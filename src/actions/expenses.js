@@ -83,7 +83,7 @@ export const startSetExpenses = () => {
                 });
 
                 dispatch(setExpenses(expenses));
-                console.log('Data has been successfully added to database!')
+                console.log('Data successfully retrieved!')
             });
     };
 };

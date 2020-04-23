@@ -132,7 +132,7 @@ test('should update expense from database', (done) => {
             id,
             updates
         });
-        return database.ref(`expenses/${id}`).once('value');
+        return database.ref(`expenses/${id}/note`).once('value');
     }).then((snapshot) => {
         expect(snapshot.val()).toBe(updates.note);
         done();

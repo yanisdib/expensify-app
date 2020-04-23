@@ -10,7 +10,7 @@ numeral.register('format', 'euro', {
         var space = numeral._.includes(format, ' €') ? ' ' : '',
             output;
         // check for space before %
-        format = format.replace(/\s?\€/, '');
+        format = format.replace(/\s?€/, '');
 
         output = numeral._.numberToFormat(value, format, roundingFunction);
 
