@@ -9,13 +9,6 @@ exports[`should render Header component correctly 1`] = `
   </h1>
   <[object Object]
     activeClassName="nav-link is-active"
-    exact={true}
-    to="/"
-  >
-    Home
-  </[object Object]>
-  <[object Object]
-    activeClassName="nav-link is-active"
     to="/dashboard"
   >
     Dashboard
