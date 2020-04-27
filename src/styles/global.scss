@@ -1,0 +1,31 @@
+@import '../fonts/_fonts';
+
+// Global settings
+
+$font-stack: "Open Sans", Tahoma, Geneva, Verdana, sans-serif;
+$font-title: "Manrope";
+$font-button: "Manrope";
+$main-color: #0047d7;
+$alternate-color: #000000;
+$subtitute-color: #333333;
+
+html,
+body {
+  font-family: $font-stack;
+  color: $subtitute-color;
+}
+
+section {
+  min-width: 100%;
+  margin-top: 185px;
+}
+
+h1 {
+  font-family: $font-title;
+  font-weight: 800;
+}
+
+h5 {
+  font-family: $font-title;
+  font-weight: 400;
+}

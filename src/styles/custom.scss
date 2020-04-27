@@ -1,3 +1,32 @@
-// Import all bootstrap
-
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "./global.scss";
+
+.btn {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 8px 10px;
+    width: auto;
+    font-family: $font-button;
+    border-color: transparent !important;
+    img{
+        margin-right: 10px;
+    }
+}
+
+.btn-primary {
+    background-color: $main-color;
+    color: #ffffff;
+    &:hover {
+        background-color: $main-color !important;
+        border-color: none !important;
+    }
+    &:focus {
+        background-color: $main-color !important;
+        border-color: none !important;
+    }
+}
+
+.btn-secondary {
+    background-color: $alternate-color;
+    color: #ffffff;
+}
