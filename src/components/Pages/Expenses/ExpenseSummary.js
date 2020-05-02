@@ -10,7 +10,7 @@ export const ExpenseSummary = ({ expensesCount, expensesTotal }) => {
     const formattedExpensesTotal = numeral(expensesTotal).format('0,0.00€').replace(',',' ');
     return (
         <div>
-            <h3>View {expensesCount} {expenseWord} totalling {formattedExpensesTotal}</h3>
+            <h5>View {expensesCount} {expenseWord} totalling {formattedExpensesTotal}</h5>
         </div>
     );
 };

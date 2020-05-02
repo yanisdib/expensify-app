@@ -14,17 +14,21 @@ export class EditExpense extends React.Component {
     };
     render() {
         return (
-            <div>
-                {/* Editing the work with ID of {props.match.params.id} */
-                }
-                <ExpenseForm
-                    expense={this.props.expense}
-                    onSubmit={this.onSubmit}
-                />
-                <button
-                    onClick={this.onClick}>
-                    Remove
-            </button>
+            <div className="row">
+                <div className="col">
+                    {/* Editing the work with ID of {props.match.params.id} */}
+                    <ExpenseForm
+                        expense={this.props.expense}
+                        onSubmit={this.onSubmit}
+                    />
+                    <div className="form-group">
+                        <button
+                            className="btn btn-alert"
+                            onClick={this.onClick}>
+                            Remove
+                        </button>
+                    </div>
+                </div>
             </div>
         )
     };

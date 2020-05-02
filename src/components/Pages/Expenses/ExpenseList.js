@@ -5,7 +5,7 @@ import selectExpenses from '../../../selectors/expenses';
 
 
 export const ExpenseList = (props) => (
-    <div>
+    <section id="expense-list-items">
         {
             props.expenses.length !== 0 ? (
                 props.expenses.map((expense) => {
@@ -15,7 +15,7 @@ export const ExpenseList = (props) => (
                     <p>No expenses...</p>
                 )
         }
-    </div>
+    </section>
 );
 const mapStateToProps = (state) => {
     return {

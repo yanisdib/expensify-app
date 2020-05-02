@@ -1,2 +1,28 @@
 // Expensify theme
 @import "./custom.scss";
+
+#home {
+    display: flex;
+    min-height: 800px;
+    .google-acc-btn {
+        margin-right: 5px;
+    }
+    .git-acc-btn {
+        margin-left: 5px;
+    }
+}
+
+#expense-list-items {
+    min-height: 100%;
+    margin: 40px 0px;
+    .price {
+        font-weight: 800;
+        font-family: $font-title;
+        font-size: 1.7em;
+        color: $alternate-color;
+        text-align: center;
+    }
+    .expense-list-item {
+        padding: 10px 0px;
+    }
+}

@@ -5,12 +5,11 @@ import { startLogout } from '../../actions/auth';
 
 export const Header = ({ startLogout }) => (
     <header className="navbar">
-        <h1>Expensify</h1>
+    <h5>Expense manager</h5>
         {/* <NavLink to="/" activeClassName="nav-link is-active" exact={true}>Home</NavLink> */}
         <NavLink to="/dashboard" activeClassName="nav-link is-active">Dashboard</NavLink>
         <NavLink to="/create" activeClassName="nav-link is-active">Create expense</NavLink>
-        <NavLink to="/help" activeClassName="nav-link is-active">Help</NavLink>
-        <button onClick={startLogout}>Logout</button>
+        <button className="btn btn-secondary" onClick={startLogout}>Logout</button>
     </header>
 );
 

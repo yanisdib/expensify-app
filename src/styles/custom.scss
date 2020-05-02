@@ -2,13 +2,13 @@
 @import "./global.scss";
 
 .btn {
+    width: auto;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     padding: 8px 10px;
-    width: auto;
     font-family: $font-button;
     border-color: transparent !important;
-    img{
+    img {
         margin-right: 10px;
     }
 }
@@ -29,4 +29,36 @@
 .btn-secondary {
     background-color: $alternate-color;
     color: #ffffff;
+    &:hover {
+        background-color: $alternate-color !important;
+        border-color: none !important;
+    }
+    &:focus {
+        background-color: $alternate-color !important;
+        border-color: none !important;
+    }
+}
+
+.btn-alert {
+    background-color: $alert-color;
+    color: #ffffff;
+    &:hover {
+        background-color: $alert-color !important;
+        border-color: none !important;
+        color: #ffffff;
+    }
+    &:focus {
+        background-color: $alert-color !important;
+        border-color: none !important;
+    }
+}
+.navbar {
+    a {
+        font-weight: 600;
+        font-family: $font-title;
+        color: $alternate-color;
+        &:hover {
+            color: $alternate-color;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-@import '../fonts/_fonts';
+@import "../fonts/_fonts";
 
 // Global settings
 
@@ -8,7 +8,10 @@ $font-button: "Manrope";
 $main-color: #0047d7;
 $alternate-color: #000000;
 $subtitute-color: #333333;
+$alert-color: #e70000;
 
+
+// general
 html,
 body {
   font-family: $font-stack;
@@ -17,15 +20,28 @@ body {
 
 section {
   min-width: 100%;
-  margin-top: 185px;
+  margin-top: 20px;
+  margin: 0 auto;
 }
 
+// titles
 h1 {
   font-family: $font-title;
   font-weight: 800;
+  color: #000000;
 }
 
 h5 {
   font-family: $font-title;
   font-weight: 400;
+  color: #000000;
+}
+
+// links
+a {
+  h5 {
+    font-family: $font-title;
+    font-weight: 700;
+    color: #000000;
+  }
 }
